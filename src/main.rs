@@ -1,16 +1,5 @@
-use alloy_consensus::TxLegacy;
-use alloy_consensus::TxEnvelope;
-use alloy_consensus::SignableTransaction;
-use alloy_primitives::{Bytes, Address, TxKind};
-use alloy_rlp::Encodable;
-use alloy_rpc_types::request::{TransactionInput, TransactionRequest};
-use alloy_network::TxSignerSync;
-use alloy_sol_types::{
-    sol, sol_data::{Array}, 
-    SolCall, SolEvent, SolType, SolValue
-};
-use alloy_signer::{Signer, SignerSync};
-use alloy_signer_wallet::LocalWallet;
+use alloy_primitives::{Bytes, Address};
+use alloy_sol_types::{ sol, SolCall, };
 
 use std::str::FromStr; // Import the FromStr trait
 use hex;
